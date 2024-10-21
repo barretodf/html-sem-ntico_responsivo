@@ -31,28 +31,7 @@ header {
 /* nav */
 nav {
     flex: 1 1 200px;
-    background-color: black;
 }
-
-.container_ul {
-    margin: 0 auto;
-    margin-top: 50%;
-
-    /* max-width: 100%; */
-}
-
-.itens_li {
-    list-style: none;
-    padding: 10px;
-}
-
-.itens_li>a {
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: aliceblue;
-}
-
 
 main {
     flex: 20 1 500px;
@@ -71,10 +50,20 @@ footer {
     height: 100px;
 }
 
-@media screen and (max-width: 717px) {
-    .container_ul {
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;       
+@media screen and (max-width: 923px) {
+    main{
+        height: calc(100vh - 330px);
+    }
+    aside{
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
+@media screen and (max-width: 717px){
+    nav{
+        height: 100px;
+    }
+    main{
+        height: calc(100vh -436px);
     }
 }
